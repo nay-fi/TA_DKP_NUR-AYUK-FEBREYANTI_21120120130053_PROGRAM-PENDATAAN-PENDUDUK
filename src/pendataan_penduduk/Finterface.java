@@ -416,7 +416,7 @@ public class Finterface extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(tabelhasil);
 
-        paneldata.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 1057, 140));
+        paneldata.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 1057, 280));
 
         jLabel16.setFont(new java.awt.Font("Dubai", 1, 16)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(255, 255, 255));
@@ -642,7 +642,8 @@ public class Finterface extends javax.swing.JFrame {
             || cbgoldar.getSelectedItem().equals("") || cbstatus.getSelectedItem().equals("")
             || jagama.getText().trim().equals("") || jalamat.getText().trim().equals("")
             || jrtrw.getText().trim().equals("") || jdesa.getText().trim().equals("") 
-            || jkota.getText().trim().equals("") || jkecamatan.getText().trim().equals("")){
+            || jkota.getText().trim().equals("") || jkecamatan.getText().trim().equals("")
+            || Filenama.getBytes().equals("")){
             JOptionPane.showMessageDialog(null, "SEMUA DATA WAJIB DI ISI","Peringatan",JOptionPane.WARNING_MESSAGE);
         } else {
             String jk="";
